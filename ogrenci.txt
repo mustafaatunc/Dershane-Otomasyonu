@@ -1,0 +1,16 @@
++5050%Ahmet Ada%17
+*1000%Matematik
+*1040%Fizik
++6085%Selda Şahin%16
+*1020%Edebiyat
++5090%Deniz Arslan%18
+*1000% Matematik
+*1060%Biyoloji
++6174%Tarık Kalem%17
+*1010%Tarih
+*1030%Cografya
+*1050%Kimya
++7075%Ayşe Kaya%18
+*1070%Müzik
+*1080%Tiyatro
+*1100%Geometri

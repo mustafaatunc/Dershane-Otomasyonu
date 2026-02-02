@@ -1,0 +1,11 @@
+1000%Matematik
+1010%Tarih
+1020%Edebiyat
+1030%Cografya
+1040%Fizik
+1050%Kimya
+1060%Biyoloji
+1070%Müzik
+1080%Tiyatro
+1090%Dil Bilgisi
+1100%Geometri
