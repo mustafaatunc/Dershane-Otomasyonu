@@ -9,11 +9,11 @@ public class Anasayfa {
         ArrayList<Ogrenci> Ogrenciler = new ArrayList<>();
         ArrayList<Ders> Dersler = new ArrayList<>();
 
-        // Dosya Yollarını Düzenleme (Sadece dosya adı yeterlidir)
+        // Dosya Yollarını Düzenleme 
         File ogrenciFile = new File("ogrenci.txt");
         File dersFile = new File("ders.txt");
 
-        // 1. Önce Dersleri Yükle (Referans oluşturmak için)
+        // 1. Önce Dersleri Yükle 
         if (dersFile.exists()) {
             BufferedReader brDers = new BufferedReader(new FileReader(dersFile));
             String line;
@@ -183,16 +183,16 @@ public class Anasayfa {
                     }
                     break;
 
-                case 9: // Ayrıntılı Listele [cite: 78]
+                case 9: // Ayrıntılı Listele 
                     Ogrenci.listeleAyrintili(Ogrenciler);
                     break;
 
-                case 10: // Ödeme Hesapla [cite: 96]
+                case 10: // Ödeme Hesapla
                     System.out.print("Hesaplanacak Öğrenci ID: ");
                     Ogrenci.odemeHesapla(Ogrenciler, scan.nextInt());
                     break;
 
-                case 11: // Çıkış ve Dosyaya Yazma [cite: 103-106]
+                case 11: // Çıkış ve Dosyaya Yazma 
                     // Öğrencileri Yaz
                     BufferedWriter bwOgr = new BufferedWriter(new FileWriter(ogrenciFile));
                     for (Ogrenci o : Ogrenciler) {
