@@ -5,7 +5,7 @@ public class Ogrenci {
     private String ogradSoyad;
     private int ogrYas;
     
-    // Ödev gereği bu özellik public bırakıldı veya doğrudan erişime açıldı 
+     
     public ArrayList<Ders> alinanDersler = new ArrayList<Ders>();
 
     public Ogrenci(int ogrId, String ogradSoyad, int ogrYas) {
@@ -14,7 +14,7 @@ public class Ogrenci {
         this.ogrYas = ogrYas;
     }
 
-    // Öğrenci Arama [cite: 69]
+    // Öğrenci Arama
     public static void ara(ArrayList<Ogrenci> Ogrenciler, String ogradSoyad) {
         boolean flag = false;
         for (Ogrenci o : Ogrenciler) {
@@ -26,7 +26,7 @@ public class Ogrenci {
         if (!flag) System.out.println("Öğrenci bulunamadı!");
     }
 
-    // Öğrenci Silme [cite: 70]
+    // Öğrenci Silme
     public static void sil(ArrayList<Ogrenci> Ogrenciler, int ogrId) {
         boolean flag = false;
         for (int i = 0; i < Ogrenciler.size(); i++) {
@@ -40,7 +40,7 @@ public class Ogrenci {
         if (!flag) System.out.println("Öğrenci bulunamadı!");
     }
 
-    // Ayrıntılı Listeleme [cite: 78-79]
+    // Ayrıntılı Listeleme
     public static void listeleAyrintili(ArrayList<Ogrenci> Ogrenciler) {
         System.out.println("Tüm Öğrenciler ve Aldıkları Dersler");
         for (Ogrenci o : Ogrenciler) {
@@ -51,7 +51,7 @@ public class Ogrenci {
         }
     }
 
-    // Ödeme Hesaplama [cite: 96-102]
+    // Ödeme Hesaplama 
     public static void odemeHesapla(ArrayList<Ogrenci> Ogrenciler, int id) {
         Ogrenci ogr = null;
         for (Ogrenci o : Ogrenciler) {
