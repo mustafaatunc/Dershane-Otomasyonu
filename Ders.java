@@ -6,13 +6,13 @@ public class Ders {
     // Başlangıç değeri 990, ilk yeni eklemede 1000 olacak
     public static int syc = 990; 
 
-    // Yeni ders eklerken kullanılacak (Otomatik ID artırır) [cite: 8]
+    // Yeni ders eklerken kullanılacak 
     public Ders(String dersAd) {
         this.dersId = (syc += 10);
         this.dersAd = dersAd;
     }
 
-    // Dosyadan okurken kullanılacak (ID artırmaz, var olanı atar)
+    // Dosyadan okurken kullanılacak 
     public Ders(int dersId, String dersAd) {
         this.dersId = dersId;
         this.dersAd = dersAd;
@@ -22,7 +22,7 @@ public class Ders {
         }
     }
 
-    // Arama Metodu [cite: 64]
+    // Arama Metodu 
     public static void ara(ArrayList<Ders> Dersler, String dersAd) {
         boolean flag = false;
         for (Ders d : Dersler) {
@@ -34,7 +34,7 @@ public class Ders {
         if (!flag) System.out.println("Ders bulunamadı!");
     }
 
-    // Silme Metodu (Kontrolü Anasayfa'da yapmak daha sağlıklı, burada sadece listeden siliyoruz) [cite: 65]
+    // Silme Metodu 
     public static void sil(ArrayList<Ders> Dersler, String dersAd) {
         // Not: İlişkisel kontrol Anasayfa.java içerisinde yapılmalıdır.
         Ders silinecek = null;
