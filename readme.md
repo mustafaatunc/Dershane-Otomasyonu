@@ -1,33 +1,34 @@
-# Dershane Otomasyon Sistemi (Java Console Application)
+# Classroom Automation System (Java Console Application)
 
-Bu proje, bir dershanedeki öğrencilerin kaydını tutan, ders seçimlerini yöneten ve kampanya kurallarına göre aylık ödeme tutarlarını hesaplayan bir Java konsol uygulamasıdır. Nesne Yönelimli Programlama (OOP) prensipleri kullanılarak geliştirilmiştir.
+This project is a Java console application developed using Object-Oriented Programming (OOP) principles. It keeps track of student registrations, manages course selections, and calculates monthly payment amounts based on campaign rules within a private educational institution (dershane).
 
-## 🚀 Özellikler
+## 🚀 Features
 
-* **Dosya İşlemleri (File I/O):** Öğrenci ve ders verileri `.txt` dosyalarından okunur ve güncellemeler dosyalara geri yazılır.
-* **Dinamik Veri Yönetimi:** `ArrayList` yapısı kullanılarak dinamik olarak öğrenci ve ders eklenebilir/silinebilir.
-* **İlişkisel Veri Kontrolü:** Bir ders silinmek istendiğinde, o dersi alan öğrenci olup olmadığı kontrol edilir.
-* **Ödeme Algoritması:** Alınan ders sayısına göre (2 ders %5, 3 ders %15 vb.) otomatik indirim ve ücret hesaplaması yapar.
+* **File Operations (File I/O):** Student and course data are read from `.txt` files, and updates are written back to the files.
+* **Dynamic Data Management:** Students and courses can be dynamically added or deleted using the `ArrayList` structure.
+* **Relational Data Control:** When attempting to delete a course, the system checks whether there are any students currently enrolled in that course.
+* **Payment Algorithm:** Automatically calculates discounts and fees based on the number of courses taken (e.g., 2 courses = 5% discount, 3 courses = 15% discount, etc.).
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Technologies Used
 
 * Java (JDK 8+)
-* Nesne Yönelimli Programlama (OOP)
-* Dosya Okuma/Yazma (BufferedReader/BufferedWriter)
+* Object-Oriented Programming (OOP)
+* File Reading/Writing (BufferedReader/BufferedWriter)
 
 ## screenShot
 ![alt text](image.png)
-## 📦 Kurulum ve Çalıştırma
 
-1.  Projeyi klonlayın:
+## 📦 Installation and Execution
+
+1. Clone the project:
     ```bash
     git clone [https://github.com/mustafaatunc/Dershane-Otomasyonu.git](https://github.com/mustafaatunc/Dershane-Otomasyonu.git)
     ```
-2.  Proje dizinine gidin ve derleyin:
+2. Navigate to the project directory and compile:
     ```bash
     javac Anasayfa.java Ders.java Ogrenci.java
     ```
-3.  Uygulamayı başlatın:
+3. Launch the application:
     ```bash
     java Anasayfa
     ```
